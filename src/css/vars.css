@@ -1,0 +1,60 @@
+img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 24px;
+    width: 1218px;
+}
+
+.container-child {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+
+.center {
+    align-items: center;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.flip-270 {
+    transform: rotateZ(270deg);
+}
+
+.flip-180 {
+    transform: rotateZ(180deg);
+}
+
+.anime {
+    transform: translate3D(0px, -36px, 0);
+    transition: .8s all ease !important;
+    opacity: 0;
+}
+
+.anime.from-bottom {
+    transform: translate3D(0px, 36px, 0);
+}
+
+.anime.from-left{
+    transform: translate3D(-36px, 0, 0);
+}
+
+.anime.from-right{
+    transform: translate3D(36px, 0, 0);
+}
+
+.anime.anime-init {
+    transform: translate3D(0, 0, 0) !important;
+    opacity: 1;
+}

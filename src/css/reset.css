@@ -25,6 +25,14 @@ time, mark, audio, video {
     list-style: none;
 }
 
+i {
+    font-style: italic;
+}
+
+strong, b {
+    font-weight: 700;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -47,4 +55,24 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+header, body, footer, nav, form, div {
+    box-sizing: border-box;
+}
+
+body, html, p, strong, li, input, button, span, a, form, div {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+button {
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input, textarea {
+    outline: none;
 }
