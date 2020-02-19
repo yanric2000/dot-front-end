@@ -289,6 +289,7 @@ $('#contact-form').on('submit', function(e) {
     //sendEmail();
 
     enableButton(form);
+    form.reset();
 
     toastr.options.progressBar = true;
     toastr.success('Retornaremos em breve', 'E-mail enviado');

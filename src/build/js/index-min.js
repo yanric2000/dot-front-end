@@ -136,5 +136,5 @@ $(window).on("scroll", function (e) {
   if (this.value.length >= 530 && 8 !== e.keyCode && 46 !== e.keyCode) return toastr.warning("Você atingiu o limite de caracteres"), e.stopImmediatePropagation(), this.value = this.value.substring(0, 530), !1;
 }), $("#contact-form").on("submit", function (e) {
   e.preventDefault();
-  return disableButton(this), 1 != isFormValid(this) ? (enableButton(this), !1) : (enableButton(this), toastr.options.progressBar = !0, toastr.success("Retornaremos em breve", "E-mail enviado"), !0);
+  return disableButton(this), 1 != isFormValid(this) ? (enableButton(this), !1) : (enableButton(this), this.reset(), toastr.options.progressBar = !0, toastr.success("Retornaremos em breve", "E-mail enviado"), !0);
 });
